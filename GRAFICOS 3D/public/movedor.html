@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+        <script src="componentes.js"></script>
+    </head> 
+    <body>
+        <!-- con respecto a la velociad en el componente movedor, una velocidad > 5 ya es bastante rapida-->
+        <a-scene background="#000">
+            <a-entity globo="color: red; lado: 1" position="-5 -5.5 -3" movedor="velocidad: 2; intervalo: 2000" obb-collider></a-entity>
+            <a-entity globo="color: blue; lado: 1" position="2 1.5 -3" movedor="velocidad: 2; intervalo: 1500" obb-collider></a-entity>
+            <a-entity globo="color: purple; lado: 1.5" position="-3 -1.5 -2" movedor="velocidad: 2; intervalo: 3000" obb-collider></a-entity>
+            <a-entity globo="color: gray; lado: 0.5" position="-1 -3.5 -3" movedor="velocidad: 4; intervalo: 500" obb-collider></a-entity>
+            <a-entity globo="color: #fa66a3; lado: 1.2" position="4 2.5 -3" movedor="velocidad: 4; intervalo: 3000" obb-collider></a-entity>
+            <a-camera position="0 1 2"></a-camera>
+        </a-scene>
+    </body>
+</html>

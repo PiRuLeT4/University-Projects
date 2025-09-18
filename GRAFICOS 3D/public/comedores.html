@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+        <script src="componentes.js"></script>
+    </head> 
+    <body>
+        <a-scene background="#000">
+            <a-entity position="-2 2 -10" comedor="radio: 1; color: red; velocidad: 1" obb-collider></a-entity>
+            <a-entity position="2 -2 -10" comedor="radio: 1; color: red; velocidad: 4"></a-entity>
+
+            <a-entity position="10 -2 -8" jugador="radio: 1 " animation="property: position; to: 20 -2 -8; easing: linear; dur: 4000"></a-entity>
+
+            <a-camera position="0 1.5 10"></a-camera>
+        </a-scene>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-obb-collider-component/dist/aframe-obb-collider-component.min.js"></script>
+
+        <script src="componentes.js"></script>
+        <title>Juego A-frame</title>
+    </head> 
+    <body>
+        <a-scene background="#000">
+            <a-entity juego="num_globos: 5; num_comedores: 7; col_globos: cyan; col_comedores: purple; col_jugador: red;
+                         tam_globos: 0.5; tam_comedores: 0.5; tam_jugador: 0.002;
+                         vel_globos: 1; vel_comedores: 3;
+                         intervalo_globos: 3000;
+                         dir_destructor: 0 0 -1; lejos_destructor: 10; cerca_destructor: 2;">
+            </a-entity>
+            <a-camera position="0 1.5 15"></a-camera>
+        </a-scene>
+    </body>
+</html>

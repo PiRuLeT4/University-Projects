@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+        <script src="componentes.js"></script>
+    </head> 
+    <body>
+        <a-scene background="#000" >
+            <a-entity globo="color: blue; lado: 1" 
+                      position="3 1.5 -3"
+                      animation="property: position; to: -3 1.5 -3; easing: linear; loop: true; dir: alternate; dur: 4000"
+                      obb-collider>
+            </a-entity>
+            <a-entity globo="color: red; lado: 1" 
+                      position="-3 1.5 -3" 
+                      animation="property: position; to: 3 1.5 -3; easing: linear; loop: true; dir: alternate; dur: 2000"                    
+                      obb-collider>
+            </a-entity>
+            <a-entity globo="color: purple; lado: 1.5" 
+                      position="-3 4.5 -5" 
+                      animation="property: position; to: 3 -4.5 -5; easing: linear; loop: true; dir: alternate; dur: 8000"                    
+                      obb-collider>
+            </a-entity>
+            <a-entity globo="color: green; lado: 0.5" 
+                      position="3 4.5 -5" 
+                      animation="property: position; to: -3 -4.5 -5; easing: linear; loop: true; dir: alternate; dur: 2000"                    
+                      obb-collider>
+            </a-entity>
+            <a-entity globo="color: gray; lado: 1" 
+                      position="2 3 -1" 
+                      animation="property: position; to: -2 3 -1; easing: linear; loop: true; dir: alternate; dur: 1500"                    
+                      obb-collider>
+            </a-entity>
+            <a-entity globo="color: #9f53d4; lado: 1" 
+                      position="2 -3 -1" 
+                      animation="property: position; to: 2 3 -1; easing: linear; loop: true; dir: alternate; dur: 520"                    
+                      obb-collider>
+            </a-entity>
+            <a-camera position="0 1.5 4"></a-camera>
+
+        </a-scene>
+    </body>
+</html>

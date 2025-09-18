@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+        <script src="componentes.js"></script>
+    </head> 
+    <body>
+        <a-scene background="#000">
+            <a-entity position="0 1.5 -3" 
+                      geometry="primitive: box" 
+                      material="color: blue" 
+                      destructor="objetivo: .objetivo; lejos: 15; cerca: 2; color: red">
+            </a-entity>
+            <a-entity position="-3 1.5 0"
+                      class="objetivo"
+                      geometry="primitive: box"
+                      material="color: #444"
+                      animation="property: position; to: 3 1.5 0; easing: linear; dir: alternate; loop: true; dur: 3000">
+            </a-entity>
+            <a-entity position="-3 1.5 2"
+                      class="objetivo"
+                      geometry="primitive: box"
+                      material="color: green"
+                      animation="property: position; to: 3 1.5 2; easing: linear; dir: alternate; loop: true; dur: 8000">
+            </a-entity>
+            <a-entity position="0 3.5 -1"
+                      class="objetivo"
+                      geometry="primitive: box"
+                      material="color: purple"
+                      animation="property: position; to: 0 -1.5 2; easing: linear; dir: alternate; loop: true; dur: 7000">
+            </a-entity>
+
+
+            <a-camera position="0 1.5 4"></a-camera>
+        </a-scene>
+    </body>
+</html>
