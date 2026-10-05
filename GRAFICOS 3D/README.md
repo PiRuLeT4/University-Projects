@@ -23,16 +23,6 @@ Videojuego inmersivo 3D en **Realidad Virtual (WebXR)** desarrollado sobre la bi
 
 ---
 
-## Proyectos Incluidos
-
-| Proyecto               | Descripción                                                          | Stack                                     |
-| :--------------------- | :------------------------------------------------------------------- | :---------------------------------------- |
-| **`GRAFICOS 3D/`**     | Juego 3D interactivo en WebXR con HUD y minimapa cenital             | A-Frame, Three.js, JavaScript             |
-| **`PTAVI/`**           | Plataforma de streaming de vídeo/audio distribuida con WebRTC        | Python (`aiortc`, `aiohttp`), WebRTC, UDP |
-| **`TACTICAL BATTLE/`** | Juego de estrategia táctica por turnos multijugador Cliente-Servidor | Python, Sockets, Data Structures          |
-
----
-
 ## Ejecución del Juego VR
 
 1. Accede a la carpeta `GRAFICOS 3D/docs/`.
